@@ -2,59 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cybersecurity Portfolio</title>
+  <title>My Projects</title>
   <style>
-    html, body {
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #111;
+      color: #eee;
       margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: sans-serif;
+      padding: 2rem;
     }
-
-    .container {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      background: url('White Collage Personal Scrapbook All About Me Poster.png') no-repeat center center;
-      background-size: contain;
-      background-color: #fff;
+    h1 {
+      font-size: 2rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
     }
-
-    a.zone {
-      position: absolute;
-      display: block;
-      /* Optional debug styles: uncomment while testing */
-      /* background: rgba(255, 0, 0, 0.3); */
+    .project {
+      margin-bottom: 2rem;
     }
-
-    /* Example positions (tweak based on your changes) */
-    .link-100days {
-      top: 38%;
-      left: 63%;
-      width: 15%;
-      height: 13%;
+    .project a {
+      color: #00ffd5;
+      text-decoration: none;
     }
-
-    .link-htb {
-      top: 72%;
-      left: 60%;
-      width: 35%;
-      height: 15%;
-    }
-
-    .link-projects {
-      top: 77%;
-      left: 10%;
-      width: 30%;
-      height: 15%;
+    .project a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <a class="zone link-100days" href="https://github.com/yourusername/100-days-of-code" title="100 Days of Code" target="_blank"></a>
-    <a class="zone link-htb" href="https://github.com/yourusername/htb-writeups" title="HackTheBox & TryHackMe Walkthroughs" target="_blank"></a>
-    <a class="zone link-projects" href="https://github.com/yourusername/cybersecurity-tools" title="Cybersecurity Tools & Projects" target="_blank"></a>
+  <h1>cyber:// portfolio</h1>
+
+  <div class="project">
+    <h2><a href="https://github.com/yourname/100-days-of-code">100 Days of Code</a></h2>
+    <p>A daily coding challenge with progress logs and small tools I've built over time.</p>
+  </div>
+
+  <div class="project">
+    <h2><a href="https://github.com/yourname/cybersecurity-tools">Cybersecurity Tools</a></h2>
+    <p>Collection of Python scripts and shell tools for network testing, recon, and automation.</p>
+  </div>
+
+  <div class="project">
+    <h2><a href="https://github.com/yourname/htb-writeups">HTB / THM Writeups</a></h2>
+    <p>Redacted walkthroughs of retired boxes with full steps and tool usage.</p>
   </div>
 </body>
 </html>
