@@ -1,39 +1,60 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>All About Me - Monica Suwon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Cybersecurity Portfolio</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('White Collage Personal Scrapbook All About Me Poster.png') no-repeat center center;
+      background-size: contain;
+      background-color: #fff;
+    }
+
+    a.zone {
+      position: absolute;
+      display: block;
+      /* Optional debug styles: uncomment while testing */
+      /* background: rgba(255, 0, 0, 0.3); */
+    }
+
+    /* Example positions (tweak based on your changes) */
+    .link-100days {
+      top: 38%;
+      left: 63%;
+      width: 15%;
+      height: 13%;
+    }
+
+    .link-htb {
+      top: 72%;
+      left: 60%;
+      width: 35%;
+      height: 15%;
+    }
+
+    .link-projects {
+      top: 77%;
+      left: 10%;
+      width: 30%;
+      height: 15%;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1 class="title">All About <span>Me</span></h1>
-    <img src="me-photo.jpg" alt="Monica Suwon" class="profile-pic" />
-    <p class="intro">Hello! I'm Monica Suwon<br>💻 Software Engineer | 🚴‍♀️ Cyclist | 🐾 Pet Lover</p>
-    
-    <div class="section">
-      <h2>My Hobby</h2>
-      <img src="bike.jpg" alt="Bike" class="bike-pic" />
-    </div>
-
-    <div class="section">
-      <h2>Things that make me happy</h2>
-      <ul>
-        <li>📸 Photography</li>
-        <li>💻 Cracking Code</li>
-        <li>🏞️ Weekend Adventures</li>
-        <li>👯‍♀️ Time with Friends</li>
-      </ul>
-    </div>
-    
-    <div class="section">
-      <h2>My Pets</h2>
-      <img src="dog.jpg" class="pet-pic" />
-      <img src="hamster.jpg" class="pet-pic" />
-    </div>
+    <a class="zone link-100days" href="https://github.com/yourusername/100-days-of-code" title="100 Days of Code" target="_blank"></a>
+    <a class="zone link-htb" href="https://github.com/yourusername/htb-writeups" title="HackTheBox & TryHackMe Walkthroughs" target="_blank"></a>
+    <a class="zone link-projects" href="https://github.com/yourusername/cybersecurity-tools" title="Cybersecurity Tools & Projects" target="_blank"></a>
   </div>
 </body>
 </html>
