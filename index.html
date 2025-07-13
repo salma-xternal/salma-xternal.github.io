@@ -1,50 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Projects</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Projects Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Courier New', monospace;
-      background-color: #111;
-      color: #eee;
       margin: 0;
-      padding: 2rem;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
     }
-    h1 {
-      font-size: 2rem;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.5rem;
-      margin-bottom: 2rem;
+    header {
+      background-color: #111;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
     }
-    .project {
-      margin-bottom: 2rem;
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
     }
-    .project a {
-      color: #00ffd5;
+    header p {
+      font-size: 1rem;
+      color: #bbb;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 1rem;
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+    }
+    .project-card h3 {
+      margin-top: 0;
+    }
+    .project-card a {
       text-decoration: none;
+      color: #0366d6;
     }
-    .project a:hover {
-      text-decoration: underline;
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>cyber:// portfolio</h1>
 
-  <div class="project">
-    <h2><a href="https://github.com/yourname/100-days-of-code">100 Days of Code</a></h2>
-    <p>A daily coding challenge with progress logs and small tools I've built over time.</p>
-  </div>
+  <header>
+    <h1>Your Name</h1>
+    <p>Developer | Maker | Builder of Things</p>
+  </header>
 
-  <div class="project">
-    <h2><a href="https://github.com/yourname/cybersecurity-tools">Cybersecurity Tools</a></h2>
-    <p>Collection of Python scripts and shell tools for network testing, recon, and automation.</p>
-  </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm [Your Name], a developer who loves building practical and interesting things. This site is all about the projects I've worked on — from side experiments to open source tools. Feel free to explore and check out the code.</p>
+  </section>
 
-  <div class="project">
-    <h2><a href="https://github.com/yourname/htb-writeups">HTB / THM Writeups</a></h2>
-    <p>Redacted walkthroughs of retired boxes with full steps and tool usage.</p>
-  </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A short description of what this project does and why it matters.</p>
+        <a href="https://github.com/yourusername/project-one" target="_blank">View on GitHub →</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>This project solves [some problem] using [some technology].</p>
+        <a href="https://github.com/yourusername/project-two" target="_blank">View on GitHub →</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <h3>Another Cool Project</h3>
+        <p>Experiment in [framework or language] that does [brief goal or feature].</p>
+        <a href="https://github.com/yourusername/another-project" target="_blank">View on GitHub →</a>
+      </div>
+
+      <!-- Add more projects here -->
+
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Your Name · <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+  </footer>
+
 </body>
 </html>
